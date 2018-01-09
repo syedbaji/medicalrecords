@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- css files -->
+    <link rel="stylesheet" href="home/homestyles.css" />
+    <style>
+        .no-padding {
+            padding: 0 0 0 0 !important;
+        }
+        
+        .no-margin {
+            margin: 0 0 0 0 !important;
+        }
+    </style>
+</head>
+
+
+<body ng-app="myApp">
+    <nav class="navbar navbar-default no-margin">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">AMMA Physiotherapy</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#!about">About</a></li>
+                <li><a href="#!product">Product</a></li>
+                <li><a href="#!contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid no-padding">
+        <div ng-view></div>
+    </div>
+
+    <!-- js files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="main.js"></script>
+    <script src="about/aboutController.js"></script>
+    <script src="product/productController.js"></script>
+    <script src="contact/contactController.js"></script>
+    <script src="home/homeController.js"></script>
+</body>
+
+</html>
