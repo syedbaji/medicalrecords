@@ -18,7 +18,9 @@
         "grunt-run": "^0.8.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "node app.js",
+        "deploy": "npm run build && gh-pages -d build",
+        "start": "node app.js"
     },
     "repository": {
         "type": "git",
@@ -37,5 +39,6 @@
     "bugs": {
         "url": "https://github.com/syedbaji/medicalrecords/issues"
     },
-    "homepage": "https://github.com/syedbaji/medicalrecords#readme"
+    "homepage": "https://syedbaji.github.io/medicalrecords/public"
+
 }
