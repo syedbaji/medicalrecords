@@ -9,7 +9,8 @@
         "express": "^4.16.2",
         "grunt-contrib-nodeunit": "^1.0.0",
         "grunt-contrib-watch": "^1.0.0",
-        "grunt-eslint": "^20.1.0"
+        "grunt-eslint": "^20.1.0",
+        "mongoose": "^5.0.1"
     },
     "devDependencies": {
         "@angular/cli": "^1.6.3",
@@ -40,5 +41,4 @@
         "url": "https://github.com/syedbaji/medicalrecords/issues"
     },
     "homepage": "https://syedbaji.github.io/medicalrecords/public"
-
 }

@@ -1,7 +1,12 @@
-myApp.controller('aboutController', function($scope) {
+myApp.controller('aboutController', function($scope, userService) {
     $scope.about = "ABOUT";
     $scope.parentcat = "This is parent cat 'Roshel singh'";
-});
-myApp.controller('aboutInCats', function($scope) {
-    $scope.cats = "Diya mirza";
+    //var userdata = userService.userinfoReport();
+    userService.userinfoReport().then(function(res) {
+        console.log(res.data);
+        $scope.userInfo = res.data;
+    });
+    $scope.userReport = function() {
+
+    }
 });
